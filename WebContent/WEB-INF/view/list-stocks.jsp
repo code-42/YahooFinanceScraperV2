@@ -5,7 +5,7 @@
 <html>
 
 <head>
-	<title>List Customers</title>
+	<title>List Stocks</title>
 	
 	<!-- reference our style sheet -->
 
@@ -19,7 +19,7 @@
 
 	<div id="wrapper">
 		<div id="header">
-			<h2>CRM - Customer Relationship Manager</h2>
+			<h2>YFS - Yahoo Finance Scraper</h2>
 		</div>
 	</div>
 	
@@ -31,18 +31,20 @@
 		
 			<table>
 				<tr>
-					<th>First Name</th>
-					<th>Last Name</th>
-					<th>Email</th>
+					<th>Today's Date</th>
+					<th>Current Market Value</th>
+					<th>Today's Gain</th>
+					<th>Total Gain</th>
 				</tr>
 				
 				<!-- loop over and print our customers -->
-				<c:forEach var="tempCustomer" items="${customers}">
+				<c:forEach var="tempTotals" items="${totals}">
 				
 					<tr>
-						<td> ${tempCustomer.firstName} </td>
-						<td> ${tempCustomer.lastName} </td>
-						<td> ${tempCustomer.email} </td>
+						<td> ${tempTotals.todaysDate} </td>
+						<td> ${tempTotals.currentMarketValue} </td>
+						<td> ${tempTotals.dayGain} </td>
+						<td> ${tempTotals.totalGain} </td>
 					</tr>
 				
 				</c:forEach>

@@ -27,7 +27,7 @@ public class TestDbServlet extends HttpServlet {
 		String user = "yahoo";
 		String pass = "yahoo";
 		
-		String jdbcUrl = "jdbc:mysql://localhost:3306/YahooScraper?useSSL=false";
+		String jdbcUrl = "jdbc:mysql://localhost:3306/yahooscraper?useSSL=false";
 		String driver = "com.mysql.jdbc.Driver";
 		
 		// get connection to database

@@ -14,27 +14,29 @@
 		http://www.springframework.org/schema/tx 
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-	<!-- Step 3: Add support for component scanning -->
+	<!-- Add support for component scanning -->
 	<context:component-scan base-package="net.ed.yahoofinancescraper" />
 
-	<!-- Step 4: Add support for conversion, formatting and validation support -->
+	<!-- Add support for conversion, formatting and validation support -->
 	<mvc:annotation-driven/>
 
-	<!-- Step 5: Define Spring MVC view resolver -->
+	<!-- Define Spring MVC view resolver -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/view/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
-		
-	<!-- source: https://www.udemy.com/spring-hibernate-tutorial/learn/v4/t/lecture/5608584?start=0 -->
-	<mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"></mvc:resources>
 	
-	   <!-- Step 1: Define Database DataSource / connection pool -->
+	<!-- Add support for reading web resources: css, images, js, etc ... -->
+	<!-- source: https://www.udemy.com/spring-hibernate-tutorial/learn/v4/t/lecture/5608584?start=0 -->
+	<!-- <mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources> -->
+	<mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"></mvc:resources>
+
+    <!-- Step 1: Define Database DataSource / connection pool -->
 	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
         <property name="driverClass" value="com.mysql.jdbc.Driver" />
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/YahooScraper?useSSL=false" />
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/yahooscraper?useSSL=false" />
         <property name="user" value="yahoo" />
         <property name="password" value="yahoo" /> 
 
