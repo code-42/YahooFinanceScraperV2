@@ -12,7 +12,7 @@ import net.ed.yahoofinancescraper.entity.myTotals;
 
 @Controller
 @RequestMapping("/stock")
-public class ScraperController {
+public class ModelController {
 	
 	// need to inject the stock dao
 	@Autowired
