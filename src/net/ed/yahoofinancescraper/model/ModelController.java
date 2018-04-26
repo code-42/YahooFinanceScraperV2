@@ -1,4 +1,4 @@
-package net.ed.yahoofinancescraper.controllers;
+package net.ed.yahoofinancescraper.model;
 
 import java.util.List;
 
