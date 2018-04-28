@@ -16,6 +16,11 @@
 <p>
 more info --> <a href="https://www.udemy.com/spring-hibernate-tutorial/learn/v4/t/lecture/5608584?start=0" target="_blank">here</a>
 </p>
+<p>
+getWebDriver --> <a href="getWD">here</a>
+<br/>
+returned from WebDriverController.getWebDriver()
+</p>
 </body>
 
 </html>
