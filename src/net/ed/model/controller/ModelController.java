@@ -1,4 +1,4 @@
-package net.ed.yahoofinancescraper.model;
+package net.ed.model.controller;
 
 import java.util.List;
 
@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import net.ed.yahoofinancescraper.dao.TotalsDAO;
 import net.ed.yahoofinancescraper.entity.myTotals;
 
 @Controller
