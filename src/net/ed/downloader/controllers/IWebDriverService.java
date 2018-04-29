@@ -1,6 +1,6 @@
 package net.ed.downloader.controllers;
 
-public interface IWebdriverService {
+public interface IWebDriverService {
 	
 	public String getWebDriver();
 	
