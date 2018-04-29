@@ -35,7 +35,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-aspects-5.0.5.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-aspects-5.0.5.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-aspects-5.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-beans-5.0.5.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-beans-5.0.5.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-beans-5.0.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-context-5.0.5.RELEASE-javadoc.jar"/>
@@ -107,5 +106,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/okio-1.13.0.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/selenium-server-standalone-3.9.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/standard.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-beans-5.0.5.RELEASE-javadoc.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
