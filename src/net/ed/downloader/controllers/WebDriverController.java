@@ -1,10 +1,11 @@
-package net.ed.yahoofinancescraper.controllers;
+package net.ed.downloader.controllers;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,14 +14,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 @Component
 @Controller
-public class WebDriverController implements IWebDriverService {
+@PropertySource("classpath:login.properties")
+public class WebDriverController implements IWebdriverService {
 	
-	private IWebDriverService webDriverService;
+	private IWebdriverService webDriverService;
 	
 	public WebDriverController() {
 	}
 
-	public WebDriverController(IWebDriverService theWebDriverService) {
+	public WebDriverController(IWebdriverService theWebDriverService) {
 		webDriverService = theWebDriverService;
 	}
 
@@ -39,6 +41,21 @@ public class WebDriverController implements IWebDriverService {
 	// open login.jsp
 	String url = "https://login.yahoo.com/";
 	driver.get(url);
+	
+//	try {
+//		Thread.sleep(2000);
+//		driver.findElement(By.name("username")).sendKeys(${username}); // fill in the blanks
+//		Thread.sleep(2000);
+//		driver.findElement(By.name("password")).sendKeys(${password});
+//		Thread.sleep(2000);
+//		driver.findElement(By.tagName("button")).click();
+//
+//	} catch (InterruptedException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	}
+
+
 		
 	return url;
 	}

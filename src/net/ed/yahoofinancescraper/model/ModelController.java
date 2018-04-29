@@ -27,7 +27,7 @@ public class ModelController {
 		// add the customers to the model
 		theModel.addAttribute("totals", theTotals);
 		
-		return "list-stocks";
+		return "list-totals";
 	}
 	
 }
