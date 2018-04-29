@@ -1,0 +1,98 @@
+/* 
+ * source luv2code tutorial https://luv2code.teachable.com/courses/135211/lectures/2012418
+ */
+
+html, body{
+	background-color: #e3deee;
+	margin-left:15px; margin-right:15px; 
+	padding:0px; 
+    padding-top: 65px;
+    text-align: center;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+table {   
+	border-collapse:collapse;
+	border-bottom:1px solid gray;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	width:72%;
+}
+ 
+th {
+	border-bottom:1px solid gray;
+	background:none repeat scroll 0 0 #136af8;
+	padding:10px;
+	color: #FFFFFF;
+}
+
+tr {
+	border-top:1px solid gray;
+	text-align:right;	
+}
+td {
+	padding-right: 10px;
+}
+ 
+tr:nth-child(even) {background: #FFFFFF}
+tr:nth-child(odd) {background: #BBBBBB}	
+ 
+#wrapper {width: 100%; margin-top: 0px; }
+#header {width: 70%; background: #136af8; margin-top: 0px; padding:15px 0px 15px 15px;}
+#header h2 {width: 100%; margin:auto; color: #FFFFFF;}
+#container {width: 100%; margin:auto}
+#container h3 {color: #000;}
+#container #content {margin-top: 20px;}
+
+.add-stock-button {
+	border: 1px solid #666; 
+	border-radius: 5px; 
+	padding: 4px; 
+	font-size: 12px;
+	font-weight: bold;
+	width: 120px; 
+	padding: 5px 10px; 
+	
+	margin-bottom: 15px;
+	background: #cccccc;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+  
+@media (max-width: 800px) {
+  /*flex-direction: column;*/
+  #basic { max-width: 300px; width: 100%; margin: 0 auto; margin-bottom: 10px; }
+  #watch { max-width: 300px; width: 100%; margin: 0 auto; margin-bottom: 10px; }
+  #help { max-width: 300px; width: 100%; margin: 0 auto; margin-bottom: 10px; }
+}
+
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 36px;
+    padding: 5px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+  }
+  li {
+    padding: 5px;
+    display: block;
+  }
+}
+    
+
+.hidden{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+

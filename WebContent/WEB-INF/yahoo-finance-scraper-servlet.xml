@@ -33,7 +33,7 @@
 	<!-- Add support for reading web resources: css, images, js, etc ... -->
 	<!-- source: https://www.udemy.com/spring-hibernate-tutorial/learn/v4/t/lecture/5608584?start=0 -->
 	<!-- <mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources> -->
-	<mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"></mvc:resources>
+	<mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
 
     <!-- Step 1: Define Database DataSource / connection pool -->
 	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"

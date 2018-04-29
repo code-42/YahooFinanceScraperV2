@@ -46,7 +46,7 @@ public class DownloadController implements IWebDriverService {
 		// close the context
 		context.close();
 		
-		return "list-totals";
+		return "list-stocks";
 	}
 }	 
 

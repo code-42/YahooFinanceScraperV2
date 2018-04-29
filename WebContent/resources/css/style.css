@@ -1,0 +1,216 @@
+/*
+
+  Oh Hello!
+
+  These are some base styles so that our tutorial looks good.
+
+  Let's go through the important bits real quick
+*/
+
+:root {
+    --yellow: #ffc600;
+    --black: #272727;
+}
+
+html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 200;
+    font-size: 1.1em;
+    color: var(--black);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+    height: 100%;
+}
+
+
+/*
+  WAT IS THIS?!
+  We inherit box-sizing: border-box; from our <html> selector
+  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    /* background-image: url("./images/topographyee.svg"), linear-gradient(110deg, #f93d66, #6d47d9); */
+    background-color: #e3deee;
+    background-size: 340px, auto;
+    background-size: auto;
+    min-height: calc(100vh - 100px);
+    margin: 0px;
+    /* background: white; */
+    background-attachment: fixed;
+    letter-spacing: -1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 5px 0;
+}
+  
+header {
+    display: grid;
+    border-bottom: 1px solid black;
+    background: #1b68fb;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-gap: 1em;
+    font-size: .9em;
+    align-items: center;
+    text-align: center;
+    padding-left: 12px;
+    border-bottom: 1px solid black;
+    background: #400098;
+}
+
+.navLinks {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e3deee;
+}
+
+.navLinks:hover {
+    color: #0df400;
+}
+
+.nav3 {
+	text-align: left;
+	padding-left: 10px;
+}
+
+.nav4 {
+	text-align: left;
+}
+
+main {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    text-align: center;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-gap: 1em;
+    }
+}
+
+.logo {
+    grid-column: 1;
+    /* background-image: url("https://blog.codepen.io/wp-content/uploads/2012/06/Black-Large.png"); */
+    background-image: url("../resources/YahooLogo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10vh;
+}
+
+/* https://www.w3schools.com/css/css_tooltip.asp */
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#disclaimer {
+	font-size: .8em;
+	text-align: left;
+	margin: 20px;
+}
+#twist {
+    color: blue;
+}
+
+
+/* 
+ * source luv2code tutorial https://luv2code.teachable.com/courses/135211/lectures/2012418
+ */
+ 
+table {   
+	border-collapse:collapse;
+	border-bottom:1px solid gray;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	width:72%;
+}
+ 
+th {
+	border-bottom:1px solid gray;
+	background:none repeat scroll 0 0 #136af8;
+	padding:10px;
+	color: #FFFFFF;
+}
+
+tr {
+	border-top:1px solid gray;
+	text-align:right;	
+}
+td {
+	padding-right: 10px;
+}
+ 
+tr:nth-child(even) {background: #FFFFFF}
+tr:nth-child(odd) {background: #BBBBBB}	
+ 
+#wrapper {width: 100%; margin-top: 0px; }
+#header {width: 70%; background: #136af8; margin-top: 0px; padding:15px 0px 15px 15px;}
+#header h2 {width: 100%; margin:auto; color: #FFFFFF;}
+#container {width: 100%; margin:auto}
+#container h3 {color: #000;}
+#container #content {margin-top: 20px;}
+
+.hidden{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
