@@ -53,13 +53,13 @@ public class LoginController implements ILoginService {
 			Thread.sleep(200);
 			System.out.print("56. ");
 			System.out.println(username);
-//			driver.findElement(By.id("login-username")).sendKeys(username); // fill in the blanks
-//			Thread.sleep(500);
-//			driver.findElement(By.id("login-signin")).click();
-//			Thread.sleep(500);
-//			driver.findElement(By.id("login-passwd")).sendKeys(password);
-//			Thread.sleep(500);
-//			driver.findElement(By.id("login-signin")).click();
+			driver.findElement(By.id("login-username")).sendKeys(username); // fill in the blanks
+			Thread.sleep(500);
+			driver.findElement(By.id("login-signin")).click();
+			Thread.sleep(500);
+			driver.findElement(By.id("login-passwd")).sendKeys(password);
+			Thread.sleep(500);
+			driver.findElement(By.id("login-signin")).click();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

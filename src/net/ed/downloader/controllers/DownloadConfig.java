@@ -7,7 +7,6 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @PropertySource("classpath:login.properties")
-//@ComponentScan("net.ed.downloader.controllers")
 public class DownloadConfig {
 	
 	// define a bean for NewWebDriverService
