@@ -1,4 +1,4 @@
-package net.ed.model.controller;
+package net.ed.model.controllers;
 
 import java.util.List;
 

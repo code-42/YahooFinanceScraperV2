@@ -17,7 +17,7 @@
 load stock/list --> <a href="stock/list">here</a>
 </p>
 <p>
-scrape yahoo --> <a href="getWD">here</a>
+scrape yahoo --> <a href="getWebDriver">here</a>
 </p>
 </body>
 

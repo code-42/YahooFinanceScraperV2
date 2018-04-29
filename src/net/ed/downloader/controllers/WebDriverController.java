@@ -27,7 +27,7 @@ public class WebDriverController implements IWebdriverService {
 	}
 
 	@Override
-	@RequestMapping("/getWD")
+	@RequestMapping("/getWebDriver")
 	public String getWebDriver() {
 	
 	// add support for chrome driver
