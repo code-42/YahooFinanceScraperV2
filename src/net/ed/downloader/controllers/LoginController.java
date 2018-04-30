@@ -16,6 +16,14 @@ public class LoginController implements ILoginService {
 	@Value("${password}")
 	private String password;
 	
+	public String getUsername() {
+		return username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+	
 	WebDriver driver;
 	
 	public LoginController(IWebDriverService theWebDriverService) {
@@ -61,18 +69,27 @@ public class LoginController implements ILoginService {
 			Thread.sleep(500);
 			driver.findElement(By.id("login-signin")).click();
 			Thread.sleep(500);
+			getMyPortfolioPage();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		return "logged in to yahoo";
 	}
 
-	public String getUsername() {
-		return username;
+	// go to My Portfolio page
+	public void getMyPortfolioPage() {
+		try {
+			Thread.sleep(500);
+			// now that i got my cookies, open to my account page
+			String url = "https://finance.yahoo.com/portfolio/p_0/view/v1";
+			driver.get(url);
+			Thread.sleep(500);
+	        System.out.println("89. opened My Portfolio page");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
-	public String getPassword() {
-		return password;
-	}
 }	
 
