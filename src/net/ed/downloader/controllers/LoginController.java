@@ -60,8 +60,8 @@ public class LoginController implements ILoginService {
 			driver.findElement(By.id("login-passwd")).sendKeys(password);
 			Thread.sleep(500);
 			driver.findElement(By.id("login-signin")).click();
+			Thread.sleep(500);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return "logged in to yahoo";
