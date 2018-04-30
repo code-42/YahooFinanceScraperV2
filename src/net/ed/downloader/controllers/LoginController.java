@@ -70,6 +70,7 @@ public class LoginController implements ILoginService {
 			driver.findElement(By.id("login-signin")).click();
 			Thread.sleep(500);
 			getMyPortfolioPage();
+			closePopupAd();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -84,12 +85,21 @@ public class LoginController implements ILoginService {
 			String url = "https://finance.yahoo.com/portfolio/p_0/view/v1";
 			driver.get(url);
 			Thread.sleep(500);
-	        System.out.println("89. opened My Portfolio page");
+	        System.out.println("88. opened My Portfolio page");
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
+	public void closePopupAd() {
+		System.out.println("96. now inside closePopupAd()");
+		try {
+			Thread.sleep(500);
+			String xPath = "//*[@id=\'__dialog\']/section/button";
+			driver.findElement(By.xpath(xPath)).click();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 }	
 
